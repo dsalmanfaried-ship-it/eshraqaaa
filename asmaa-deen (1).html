@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>اسمع دين 🤍</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e4;--card:#fffaf0;--gold:#a9741a;--txt:#14241d;--mut:#5d6f66;--line:#e4d9bd;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#06231b;--card:#0c3328;--gold:#e0b25a;--txt:#f3ecd9;--mut:#9db8ac;--line:#1b4a3b;--on:#06231b}}
+:root[data-theme="dark"]{--bg:#06231b;--card:#0c3328;--gold:#e0b25a;--txt:#f3ecd9;--mut:#9db8ac;--line:#1b4a3b;--on:#06231b}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;min-height:100%;background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cg fill='none' stroke='%23d4af37' stroke-opacity='.10'%3E%3Crect x='20' y='20' width='50' height='50'/%3E%3Crect x='20' y='20' width='50' height='50' transform='rotate(45 45 45)'/%3E%3Ccircle cx='45' cy='45' r='9'/%3E%3C/g%3E%3C/svg%3E");color:var(--txt);font-family:Tajawal,system-ui,"Segoe UI",Tahoma,sans-serif;padding-bottom:84px}
+h1,h2,h3{font-family:Amiri,Tajawal,serif;margin:0}
+.wrap{padding:0 14px;max-width:720px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 0 8px}
+header h1{font-size:26px;color:var(--gold)}
+.pill{background:var(--card);border:1px solid var(--line);color:var(--gold);padding:5px 12px;border-radius:99px;font-size:13px}
+input,select,textarea{width:100%;background:var(--card);color:var(--txt);border:1px solid var(--line);border-radius:12px;padding:11px 13px;font:inherit;font-size:15px}
+textarea{min-height:80px}
+.stories{display:flex;gap:14px;overflow-x:auto;padding:12px 0;scrollbar-width:none}
+.st{flex:none;width:68px;text-align:center;font-size:11px;color:var(--mut);cursor:pointer}
+.st i{display:grid;place-items:center;width:62px;height:62px;margin:0 auto 4px;border-radius:50%;font-style:normal;font-size:24px;font-weight:700;color:var(--gold);background:var(--card);border:2px solid var(--gold);box-shadow:0 0 0 3px var(--bg),0 0 0 4px var(--line)}
+.st.on i{background:var(--gold);color:var(--on)}
+.ban{background:linear-gradient(135deg,var(--card),transparent);border:1px solid var(--gold);border-radius:16px;padding:14px;margin:6px 0 10px;position:relative}
+.ban small{color:var(--gold)}
+.ban p{margin:6px 0 0;line-height:1.8;font-size:15px}
+.ban button{position:absolute;left:10px;top:10px}
+.chips{display:flex;gap:7px;overflow-x:auto;padding:6px 0 10px;scrollbar-width:none}
+.ch{flex:none;padding:6px 13px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--mut);font-size:13px;cursor:pointer}
+.ch.on{background:var(--gold);color:var(--on);border-color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}
+@media(min-width:560px){.grid{grid-template-columns:repeat(3,1fr)}}
+.cd{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer}
+.cd .th{position:relative;aspect-ratio:16/10;display:grid;place-items:center;font-size:34px}
+.cd h4{margin:8px 10px 2px;font-size:14px;line-height:1.5}
+.cd p{margin:0 10px 10px;font-size:12px;color:var(--mut)}
+.pl{position:absolute;bottom:6px;left:8px;font-size:11px;background:#0008;color:#fff;padding:2px 7px;border-radius:99px}
+.ck,.hr{position:absolute;top:6px;font-style:normal;font-size:12px;padding:1px 7px;border-radius:99px;background:#0008;color:#fff}
+.ck{right:6px;color:#7ee2a8}.hr{left:6px;color:#ff8da1}
+.sec{margin:14px 0 8px;font-size:18px;color:var(--gold)}
+.row{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:8px}
+.row>div{flex:1}.row small{color:var(--mut);display:block;font-size:12px}
+.bt{display:inline-block;background:var(--gold);color:var(--on);border:0;border-radius:11px;padding:9px 15px;font:inherit;font-weight:700;font-size:14px;text-decoration:none;cursor:pointer}
+.bt.g{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+.bt.r{background:transparent;color:#e0556c;border:1px solid #e0556c}
+.ib{background:var(--card);border:1px solid var(--line);color:var(--gold);border-radius:10px;padding:5px 10px;font-size:13px;cursor:pointer;font-family:inherit}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-around;background:var(--card);border-top:1px solid var(--line);padding:8px 0 calc(8px + env(safe-area-inset-bottom,0px));z-index:20}
+nav a{flex:1;text-align:center;font-size:11px;color:var(--mut);cursor:pointer}
+nav a b{display:block;font-size:22px;font-weight:400}
+nav a.on{color:var(--gold)}
+.ov{position:fixed;inset:0;background:var(--bg);z-index:30;overflow:auto;display:none;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+.ov.show{display:block}
+.vid{aspect-ratio:16/9;background:#000;width:100%}
+.vid iframe{width:100%;height:100%;border:0}
+.np{display:grid;place-items:center;text-align:center;gap:10px;padding:20px;color:#fff}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.msgs{display:flex;flex-direction:column;gap:8px;padding:8px 0;min-height:30vh}
+.m{padding:10px 13px;border-radius:14px;line-height:1.8;font-size:14px;white-space:pre-wrap;max-width:92%}
+.m.u{background:var(--gold);color:var(--on);align-self:flex-start}
+.m.b{background:var(--card);border:1px solid var(--line);align-self:flex-end}
+.tg{position:relative;width:46px;height:26px;border-radius:99px;background:var(--line);border:0;cursor:pointer;flex:none}
+.tg::after{content:"";position:absolute;top:3px;right:3px;width:20px;height:20px;border-radius:50%;background:var(--mut);transition:.2s}
+.tg.on{background:var(--gold)}.tg.on::after{right:23px;background:var(--on)}
+#toast{position:fixed;bottom:92px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--on);padding:8px 16px;border-radius:99px;font-size:13px;z-index:50;opacity:0;transition:.3s;pointer-events:none}
+#toast.show{opacity:1}
+.emp{text-align:center;padding:50px 10px;color:var(--mut)}.emp b{display:block;font-size:50px}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<nav id="nav"></nav>
+<div class="ov" id="pl"></div>
+<div class="ov" id="as"></div>
+<div id="toast"></div>
+<script>
+const $=s=>document.querySelector(s),E=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ld=(k,d)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}};
+const sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const CAT={س:'سيرة',ت:'تفسير',ع:'عقيدة',ف:'فقه',ح:'حديث',ر:'رقائق',ق:'قصص الأنبياء',أ:'أسرة وأخلاق',ل:'تلاوات'};
+const IC={'سيرة':'🕌','تفسير':'📖','عقيدة':'☪️','فقه':'⚖️','حديث':'📜','رقائق':'🤲','قصص الأنبياء':'🌙','أسرة وأخلاق':'🏡','تلاوات':'🎧'};
+const D={
+'الشيخ محمد متولي الشعراوي':['ت|تفسير سورة الفاتحة','ت|تفسير سورة الكهف','ت|تفسير سورة يوسف','ق|قصة سيدنا إبراهيم عليه السلام','ق|قصة سيدنا موسى عليه السلام','ر|الصبر على البلاء','ر|الرزق والتوكل على الله','س|الإسراء والمعراج','ر|خواطر عن الصلاة','ف|خواطر عن الحج','ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق'],
+'الشيخ محمد حسان':['س|سيرة النبي ﷺ','س|أخلاق النبي ﷺ','ر|التوبة إلى الله','ر|سكرات الموت','ر|أهوال يوم القيامة','ف|فضل الصلاة','أ|بر الوالدين','س|قصص الصحابة','أ|حقوق الزوجين','ر|الإخلاص لله','أ|الصدق'],
+'الدكتور عمرو خالد':['ق|قصص الأنبياء','س|قصص الصحابة','ر|كيف تحب الله','ر|السكينة والطمأنينة','ر|تجديد الإيمان','ر|الأمل بعد اليأس','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ مصطفى حسني':['ر|التفاؤل وحسن الظن بالله','ر|الرضا بالقدر','ر|البداية من جديد','ر|حب الله','ر|الثقة بالله','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ خالد الجندي':['ت|خواطر قرآنية','ع|شرح الأسماء الحسنى','أ|أحاديث في الأخلاق','ف|فقه المعاملات','ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق'],
+'الدكتور محمد راتب النابلسي':['ع|الإعجاز العلمي في القرآن','ع|أسماء الله الحسنى','ع|الإيمان والتوحيد','أ|الأخلاق الإسلامية','س|السيرة النبوية','أ|تربية الأبناء في الإسلام','ر|أنواع الصبر','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ ابن عثيمين':['ح|شرح رياض الصالحين','ح|شرح الأربعين النووية','ع|شرح كتاب التوحيد','ع|شرح الأصول الثلاثة','ف|لقاء الباب المفتوح','ع|شرح العقيدة الواسطية','ف|أحكام الزكاة','ح|شرح بلوغ المرام','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ ابن باز':['ف|فتاوى نور على الدرب','ف|أحكام الصلاة','ف|أحكام الصيام','ف|أحكام الحج والعمرة','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ الألباني':['ف|صفة صلاة النبي ﷺ','ف|سلسلة الهدى والنور','ع|منهج السلف','ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق'],
+'الشيخ نبيل العوضي':['س|السيرة النبوية','س|قصص الصحابة','أ|أخلاق المسلم','ر|قصص التائبين','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ عمر عبد الكافي':['ر|عذاب القبر','ر|قصص التائبين','ر|الجنة والنار','ق|قصة يوسف عليه السلام','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ محمد العريفي':['ر|استمتع بحياتك','ف|أسرار الصلاة','س|قصص الصحابة','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ إياد قنيبي':['ع|الرد على الإلحاد','ع|الأسئلة الوجودية والإيمان','ت|تدبر القرآن','ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق'],
+'الشيخ صالح المغامسي':['ت|تفسير جزء عم','ق|قصص القرآن','ت|تفسير سورة الكهف','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ سلمان العودة':['ق|قصص الأنبياء','ت|تدبر القرآن','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ خالد الراشد':['ر|التوبة وحلاوة الإيمان','ف|الخشوع في الصلاة','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ عائض القرني':['ر|لا تحزن','ر|السعادة الحقيقية','ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق'],
+'الدكتور عثمان الخميس':['س|التاريخ الإسلامي','س|سيرة الصحابة','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ محمود المصري (أبو عمار)':['س|قصص الصحابة','ق|قصص الأنبياء','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ أبو إسحاق الحويني':['س|قصص السلف','ح|شرح الأحاديث','ر|الإخلاص لله','أ|الصدق'],
+'الشيخ محمد الغزالي':['أ|خلق المسلم','ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق'],
+'الشيخ محمد صالح المنجد':['أ|فتاوى وأحكام الأسرة','ف|سلسلة الأحكام الفقهية','ر|الإخلاص لله','أ|الصدق'],
+'الدكتور طارق السويدان':['س|السيرة النبوية','ق|قصص الأنبياء','ر|الإخلاص لله','أ|الصدق'],
+'الدكتور راغب السرجاني':['س|قصة الإسلام','ق|قصص الأنبياء','ر|الإخلاص لله','أ|الصدق'],
+'القارئ مشاري العفاسي':['ل|تلاوة سورة البقرة','ل|تلاوة سورة الكهف','ل|تلاوة سورة الرحمن','ل|تلاوة سورة ياسين','ل|تلاوة سورة الملك'],
+'القارئ عبد الباسط عبد الصمد':['ل|تلاوة سورة طه','ل|تلاوة سورة يوسف','ل|تلاوة سورة مريم','ل|تلاوة سورة ياسين','ل|تلاوة سورة الملك'],
+'القارئ محمد صديق المنشاوي':['ل|تلاوة سورة الإسراء','ل|تلاوة سورة الرحمن','ل|تلاوة سورة ياسين','ل|تلاوة سورة الملك'],
+'القارئ محمود خليل الحصري':['ل|تلاوة سورة الفاتحة وقصار السور','ل|تلاوة سورة البقرة','ل|تلاوة سورة ياسين','ل|تلاوة سورة الملك'],
+'القارئ ماهر المعيقلي':['ل|تلاوة سورة مريم','ل|تلاوة سورة يوسف','ل|تلاوة سورة ياسين','ل|تلاوة سورة الملك'],
+'القارئ سعد الغامدي':['ل|تلاوة سورة الكهف','ل|أذكار الصباح والمساء','ل|تلاوة سورة ياسين','ل|تلاوة سورة الملك'],
+'القارئ ياسر الدوسري':['ل|تلاوة سورة الإنسان','ل|تلاوة سورة الكهف','ل|تلاوة سورة ياسين','ل|تلاوة سورة الملك'],
+'الشيخ محمد عبده':['ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق','ر|الصبر','ر|الشكر','ر|التوكل على الله','ر|خطبة وموعظة','ر|دروس ومحاضرات','ر|الاستغفار','ف|الخشوع في الصلاة','ف|أحكام الزكاة'],
+'الشيخ أحمد نصر':['ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق','ر|الصبر','ر|الشكر','ر|التوكل على الله','ر|خطبة وموعظة','ر|دروس ومحاضرات','ر|الاستغفار','ف|الخشوع في الصلاة'],
+'الشيخ النفيس':['ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق','ر|الصبر','ر|الشكر','ر|التوكل على الله','ر|خطبة وموعظة','ر|دروس ومحاضرات','ر|الاستغفار','ف|الخشوع في الصلاة'],
+'الشيخ الأواني':['ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق','ر|الصبر','ر|الشكر','ر|التوكل على الله','ر|خطبة وموعظة','ر|دروس ومحاضرات','ر|الاستغفار','ف|الخشوع في الصلاة'],
+'الشيخ القرافي':['ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق','ر|الصبر','ر|الشكر','ر|التوكل على الله','ر|خطبة وموعظة','ر|دروس ومحاضرات','ر|الاستغفار','ف|الخشوع في الصلاة'],
+'الشيخ عبد الحميد كشك':['ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق','ر|الصبر','ر|الشكر','ر|التوكل على الله','ر|خطبة وموعظة','ر|دروس ومحاضرات','ر|الاستغفار'],
+'الشيخ أحمد ديدات':['ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق','ر|الصبر','ر|الشكر','ر|التوكل على الله','ر|خطبة وموعظة','ر|دروس ومحاضرات','ر|الاستغفار'],
+'الحبيب علي الجفري':['ر|الإخلاص لله','أ|الصدق','أ|حسن الخلق','ر|الصبر','ر|الشكر','ر|التوكل على الله','ر|خطبة وموعظة','ر|دروس ومحاضرات','ر|الاستغفار','ف|الخشوع في الصلاة'],
+'القارئ محمد رفعت':['ل|تلاوة سورة ياسين','ل|تلاوة سورة الملك','ل|تلاوة سورة الواقعة','ل|تلاوة سورة الكهف','ل|تلاوة سورة مريم','ل|تلاوة سورة طه'],
+'القارئ مصطفى إسماعيل':['ل|تلاوة سورة ياسين','ل|تلاوة سورة الملك','ل|تلاوة سورة الواقعة','ل|تلاوة سورة الكهف','ل|تلاوة سورة مريم','ل|تلاوة سورة طه'],
+'القارئ عبد الرحمن السديس':['ل|تلاوة سورة ياسين','ل|تلاوة سورة الملك','ل|تلاوة سورة الواقعة','ل|تلاوة سورة الكهف','ل|تلاوة سورة مريم','ل|تلاوة سورة طه'],
+'القارئ سعود الشريم':['ل|تلاوة سورة ياسين','ل|تلاوة سورة الملك','ل|تلاوة سورة الواقعة','ل|تلاوة سورة الكهف','ل|تلاوة سورة مريم','ل|تلاوة سورة طه'],
+'القارئ ناصر القطامي':['ل|تلاوة سورة ياسين','ل|تلاوة سورة الملك','ل|تلاوة سورة الواقعة','ل|تلاوة سورة الكهف','ل|تلاوة سورة مريم'],
+'القارئ أحمد العجمي':['ل|تلاوة سورة ياسين','ل|تلاوة سورة الملك','ل|تلاوة سورة الواقعة','ل|تلاوة سورة الكهف','ل|تلاوة سورة مريم']
+};
+const RAW=`@دكتور أحمد العربي
+#تزكية وإيمان
+ZWraKKwNfpE|كيف نصل إلى القلب السليم؟
+xwywIkJF6HE|الأخلاء يومئذ بعضهم لبعض عدو إلا المتقين
+sAbgN3H32bw|هذا هو القلب — مقطع مؤثر
+!ZRFrXCvydog|لمثل هذا فأعدوا
+si994Z9BAr8|فاهم 38 — اعتزال إبراهيم عليه السلام
+#القرآن
+lkX6mcCD3CI|أنا صاحبك القرآن.. كيف يكون القرآن صاحبي؟
+hK-9Be0prrA|فاهم 37 — عن القرآن الكريم
+XC-JV2342ic|هذا هو القرآن — مقطع رائع
+!8jlOpkjCNzM|تأثير القرآن
+!ssao8w-8_Pg|كذلك لنثبت به فؤادك
+#الصلاة
+63_AOCldyXo|فاهم 36 — أول ما يحاسب به العبد الصلاة
+9TjlLsX9iA0|ماذا أريد من رمضان؟
+#الدعاء
+!ZFXEXTRhOTQ|دعاء يذيب قساوة القلب
+!dTiPXjPwj-4|نفر إليك منا فاعف عنا
+!U6L4ZeIuCu4|أنت أحق من ذُكر
+Tr9eZ-M6mUk|مناجاة الله عز وجل والأُنس به
+@أمجد سمير
+#تزكية وإيمان
+AjipD2d2rWo|اجعل يقينك قوياً.. يريك الله المعجزات
+pqOdVMSO_xE|حقيقة الدنيا؟
+TlAzTpwh2Cw|كيف تهرب من ظلمات الدنيا؟
+e0yMlaICASA|من هم الصالحين؟
+5uMX_lW1Myw|كيف سرقت المقارنة سعادتك دون أن تشعر؟
+YcT0yM_fHeU|سبب الخمول والكسل والتشتت وإدمان التليفون
+b5_sznU0Pm4|كيف يوازن المسلم بين العمل والعبادة؟
+EC4esPiVeVw|ليلة رأس السنة
+#التوبة
+X18eDcft4G4|قصة توبتي
+LELh3kHmyTw|رسالة لكل من أرهقته العودة للمعاصي بعد التوبة
+kwRY_bleW2w|كلمتين هيطمنوك ويريحوا قلبك
+#الصلاة
+1473X0E1Cqk|أسرار الصلاة
+#قصص
+!Rmp0Azp7OAo|قصة غريبة
+wyXbLGlynbQ|تأملات في قصة أصحاب السبت
+lsZrPXB7VsE|واجه الدنيا بقلب لا يخاف — أبو ذر الغفاري
+oThH4gXdW0k|قصة سليمان عليه السلام مع الهدهد
+@سمير مصطفى
+#التوبة
+GhCy5yqHhd4|من يسألني فأعطيه؟ ومن يتوب اليوم فأغفر له؟
+090VEfM9LOw|موعظة تهز القلوب
+jrffu7M7Uk0|أحسن الظن بالله ولا تستسلم
+S5_3QUFkZV0|كيف نتخفف من ذنوبنا؟
+#قصص
+m6S4vPy0P54|مسجد الصحابة — وصية راهب
+y2ZDAIyxzNM|أبصر طريقك ج1
+#الموت والآخرة
+oUFSYNcNEMU|من مشاعر الموت وألم الفراق
+bhFBiMrQA2o|خطبة النذير العريان (ذكر الموت)
+#الصلاة
+-FSkQOm1PDA|اقف انتباه
+TInVMFxX2PI|ستعشق الصلاة — الخشوع وقوة التوحيد
+@الشيخ محمد الغليظ
+#القرآن
+gtKC6Xa_RnU|القرآن — مقطع مؤثر
+yhgqGgXTbfI|كل يوم آية (18)
+#التوبة
+NnvG_Ahz-Vk|مهما وقعت أو انتكست افتكر إنه يبدأ ويعيد
+uGWRj9-N3BU|مشكلته في الدين المؤثر في الحياة
+Bgjz1VxODjY|من أين أبدأ؟ (1)
+#الصلاة
+mH1RMAhwDa8|إنها الصلاة — أستحي من الله
+LUhi8GoeBGw|لو مبتصليش أو بتقطع في الصلاة
+#الدعاء
+wvU6jCXKdv4|روشتة ابن القيم لاستجابة الدعاء
+S_FXjpy2FVk|أنا مش لوحدي — معك الملك
+7zwh51ysJts|دعاء فيه كل اللي نفسك فيه
+#أسرة وزواج
+PkOmS0EYEhw|هل مبدأ حقي وحقك ينفع في الزواج؟
+VBWZMrxkJxk|نصيحة لكل زوجة صاحب رسالة حقيقية
+dlByIzPPRR0|إيه صفات الزوج الصالح؟
+#قصص
+3m3Nb7O7vgs|بيده الأمر — قصة مع مادة السيوتيكال
+fl5gzROdu0Q|الله يراك — قصة هادفة
+MRfO8IfuFE8|مفيش تاني
+#قوائم تشغيل
+PL2Sst6o2QU5ShcUdVN6WmSOeCF1ijGfLb|فيديوهات مميزة للشيخ محمد الغليظ
+@ياسر ممدوح
+#أسرة وزواج
+M7ZqHNnTQs0|خش هتجيبك!
+34_Bj67N6Fk|اتطلقتي يا فالحة
+!mIA00ifqbSg|الخديعة
+qm-63nnpA6g|مش مقتنعة بالحجاب
+#إيمان وعقيدة
+RIaaFH6d6tA|بدأت أشك في الدين
+byJfW3Wb5ms|لو بصلي بس!
+OY5uHXTnCxQ|العكاك والملاك
+O--nWTmxNd4|هو ده قرآن؟؟
+!xNufizcaMFQ|الذين يظنون أنهم ملاقوا ربهم
+#قصص
+zT4PXuZJdxw|تعرف يعني إيه ست بجد — السيدة عائشة
+#قوائم تشغيل
+PLVdjsGOClzyHqLF_bgbxdPxAKHpGdkqx2|فيديو الجمعة — كل الحلقات
+@حازم شومان
+#تزكية وإيمان
+-pmRKYcbFI4|أسباب النجاح في الدنيا والدين — طريقة تفكيرك
+!J71rHj7gyCU|أكتر فيديو تحفيزي ممكن تشوفه
+4t3_HOTG0JY|حزنك وهم
+DFCrbwzTp4Q|حقيقة الدنيا
+5VQUEPuDYok|الثقة في الله
+#قصص
+Mw_xZ101Xps|﴿وينقلب إلى أهله مسرورًا﴾ — قصة أبي سلمة وأم سلمة
+RcIs_XYBDws|شفيعًا لأصحابه — حكاية آية
+lJivOl23G6U|قصة مؤثرة في فضل قراءة القرآن
+wcroQmXWtGM|عجائب الصلاة على رسول الله ﷺ — ج2
+#التوبة
+-63VeI1gKXg|والله هنقدر نتوب يا شباب
+nCNooKzdfA0|مهما بعدت — الرجوع إلى الله
+2JkQUvroXRc|فيديو تحفيزي عن التوبة والندم
+YZebJPi9Qo8|التوبة — مقطع جميل
+#أسرة وزواج
+l9j708-JDIE|الفجوة بين الآباء والأبناء
+lVVahYXUlsU|كلمة مؤثرة عن الحياة الزوجية
+#قوائم تشغيل
+PLVPp4tYPys9O-Vlcp8dnmaShe6eZ2Y3Uq|مقاطع الصلاة
+PLVPp4tYPys9MxsCWyA5z60h55qMTheKjz|خطب الجمعة
+@شريف علي
+#تزكية وإيمان
+mQxALzCnlNU|٥- ثمرات الخوف
+xtBD4GoaYtE|٢٦- حُب الدنيا
+2VHpBxoBwNE|٧- الذكر يدفع الهم والغم
+_8q-7fyCyyU|مُعاملة الكريم
+jXgwAEfAsVw|لا تفتحه!
+VZbnsz1M8Es|أين المفر…؟
+yLGZvdlggWY|﴿ثُمَّ يَتُوبُونَ مِن قَرِيبٍ﴾
+dKxkqEFYuUU|علمني نوحٌ عليه السلام
+StsGAgA37fY|شفاء القلب في زمن الفتن — من سورة يوسف
+#القرآن
+kUcfwqp_2gg|﴿قَدْ أَفْلَحَ الْمُؤْمِنُونَ﴾
+#التوبة
+oZ6Paggql-A|نعمة التوبة — تخيّل حياتك بلا توبة
+DXlyygjcRA8|رسالة لكل من أرهقته ذنوب الخلوات
+@عبد العزيز الطريفي
+#تزكية وإيمان
+-2nKpmmaS6I|الصحابة.. الجيل الذي غيّر العالم
+M4JC2uvYBYs|الدنيا ليست لك (الابتلاء)
+#الصلاة
+z9MMPhdIe2U|كيف تحافظ على الصلاة؟
+RmdjSW8_Rl4|المحافظة على الصلاة
+feF28UkkJLs|حكم تارك الصلاة
+#إيمان وعقيدة
+eNPCx1VXzuw|الإيمان قول وعمل واعتقاد
+HzJZxOiBN20|الزيغ موجود في القلب قبل النظر
+!o9NEC6ijrSw|الصراع بين الكفر والإيمان`;
+let L=[],_s='',_c='';
+RAW.split('\n').forEach(r=>{r=r.trim();if(!r)return;if(r[0]==='@'){_s=r.slice(1);return}if(r[0]==='#'){_c=r.slice(1);return}let sh=0;if(r[0]==='!'){sh=1;r=r.slice(1)}const k=r.indexOf('|');L.push({i:'r'+L.length,s:_s,t:r.slice(k+1),c:_c,y:r.slice(0,k),sh})});
+Object.entries(D).forEach(([s,a])=>a.forEach(x=>{const p=x.split('|');L.push({i:'s'+L.length,s,t:p[1],c:CAT[p[0]]})}));
+
+[['كيف أتخلص من إدمان الإباحية؟','علاج إدمان الإباحية رؤية شرعية'],['العادة السرية: الحكم وطريق الخلاص','العادة السرية الحكم وطريق الخلاص'],['غض البصر: كيف أبدأ؟','غض البصر كيف أبدأ'],['توبة المدمن: الرجوع بعد الانتكاسة','التوبة بعد الانتكاسة والعودة للذنب'],['الفراغ والشهوة: كيف أتحصّن؟','علاج الفراغ والشهوة للشباب'],['العفة وسبل التحصّن للشباب','العفة وسبل التحصن للشباب'],['الصلاة وأثرها في كسر العادة','الصلاة والتخلص من العادة السرية'],['لا تيأس بعد الذنب: الانتكاسة والعودة','لا تيأس من رحمة الله بعد الذنب'],['علاج الشهوة بالصيام والذكر','علاج الشهوة بالصيام والذكر'],['أثر الإباحية على القلب والعلاقات','أضرار الإباحية على القلب والزواج']].forEach(a=>L.push({i:'a'+L.length,s:'متنوع',t:a[0],c:'العفة والتوبة',q:a[1]}));
+const SHL=()=>[...new Set(L.map(l=>l.s))];
+let CU=ld('ilm_c',[]);CU.forEach(x=>L.push(x));
+let O=ld('ilm_o',{});
+const vid=l=>l.y||O[l.i]||'';
+let W=new Set(ld('ilm_w',[])),F=new Set(ld('ilm_f',[])),NAME=ld('ilm_n',''),TH=ld('ilm_t','dark'),RM=ld('ilm_r',{on:false,t:'08:00',d:''});
+let tab='home',fs='',fc='',q='',cur=null,mi=0,H=[];
+const MSG=['يا {n}، طلب العلم عبادة، فاجعل لك كل يوم درساً ولو قصيراً.','أهلاً {n} 🤍 خمس دقائق مع درس نافع تغيّر يومك.','من سلك طريقاً يلتمس فيه علماً سهّل الله له به طريقاً إلى الجنة.','{n}، لا تؤجّل: المداومة على القليل خير من الانقطاع عن الكثير.','اللهم انفعنا بما علمتنا، وعلّمنا ما ينفعنا يا {n}.'];
+const hue=s=>{let h=0;for(const c of s)h=(h*31+c.charCodeAt(0))%360;return h};
+const card=l=>`<div class="cd" data-i="${l.i}"><div class="th" style="background:linear-gradient(135deg,hsl(${hue(l.s)} 45% 28%),hsl(${(hue(l.s)+40)%360} 50% 13%))"><span>${IC[l.c]||'📖'}</span>${vid(l)?'<b class="pl">'+(l.sh?'⏱ قصير':'▶ فيديو')+'</b>':''}${W.has(l.i)?'<i class="ck">✓</i>':''}${F.has(l.i)?'<i class="hr">♥</i>':''}</div><h4>${E(l.t)}</h4><p>${E(l.s)}</p></div>`;
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),2000)}
+function applyTheme(){document.documentElement.setAttribute('data-theme',TH);const m=document.querySelector('meta[name=theme-color]');}
+function filt(){const k=q.trim();return L.filter(l=>(!fs||l.s===fs)&&(!fc||l.c===fc)&&(!k||(l.t+' '+l.s+' '+l.c).includes(k)))}
+function nav(){const T=[['home','🏠','الرئيسية'],['exp','🧭','استكشاف'],['fav','♥','المفضلة'],['set','⚙️','المزيد']];$('#nav').innerHTML=T.map(t=>`<a data-t="${t[0]}" class="${tab===t[0]?'on':''}"><b>${t[1]}</b>${t[2]}</a>`).join('')}
+function render(){
+ nav();const A=$('#app');const cats=[...new Set(L.map(l=>l.c))];
+ const hd=`<header><h1>اسمع دين 🤍</h1><span class="pill">${W.size} / ${L.length} شاهدتها</span></header>`;
+ if(tab==='home'){
+  const sh=SHL().map(s=>`<div class="st ${fs===s?'on':''}" data-s="${E(s)}"><i>${E(s.replace(/^(الشيخ|الدكتور|دكتور|القارئ|الحبيب|د\.) /,'')[0])}</i>${E(s.replace(/^(الشيخ|الدكتور|دكتور|القارئ|الحبيب|د\.) /,'').split(' ').slice(-1)[0])}</div>`).join('');
+  const r=filt();
+  A.innerHTML=hd+`<input id="q" type="search" placeholder="ابحث بعنوان الدرس أو اسم الشيخ…" value="${E(q)}"><div class="stories">${sh}</div>
+  <div class="ban"><small>رسالة اليوم</small><button class="ib" data-t="set">✏️ ${NAME?E(NAME):'اكتب اسمك'}</button><p id="bm"></p></div>
+  <div class="chips"><span class="ch ${!fc?'on':''}" data-c="">الكل</span>${cats.map(c=>`<span class="ch ${fc===c?'on':''}" data-c="${E(c)}">${E(c)}</span>`).join('')}</div>
+  ${r.length?`<div class="grid">${r.map(card).join('')}</div>`:'<div class="emp"><b>🔎</b>مفيش نتائج</div>'}`;
+  bm();const i=$('#q');i.oninput=()=>{q=i.value;const p=i.selectionStart;render();const n=$('#q');n.focus();n.setSelectionRange(p,p)};
+ }else if(tab==='exp'){
+  A.innerHTML=hd+`<h3 class="sec">التصنيفات</h3><div class="grid">${cats.map(c=>`<div class="cd" data-c="${E(c)}" data-go="1"><div class="th" style="background:linear-gradient(135deg,hsl(${hue(c)} 40% 26%),hsl(${(hue(c)+40)%360} 45% 12%))">${IC[c]||'📖'}</div><h4>${E(c)}</h4><p>${L.filter(l=>l.c===c).length} درس</p></div>`).join('')}</div>
+  <h3 class="sec">الشيوخ</h3><div class="grid">${SHL().map(s=>`<div class="cd" data-s="${E(s)}" data-go="1"><h4 style="margin-top:14px">${E(s)}</h4><p>${L.filter(l=>l.s===s).length} درس</p></div>`).join('')}</div>`;
+ }else if(tab==='fav'){
+  const r=L.filter(l=>F.has(l.i));
+  A.innerHTML=hd+(r.length?`<div class="grid">${r.map(card).join('')}</div>`:'<div class="emp"><b>🌙📖</b>قائمة المفضلة فاضية<br><br><button class="bt" data-t="home">استكشف الدروس</button></div>');
+ }else{
+  A.innerHTML=hd+`<h3 class="sec">الإعدادات</h3>
+  <div class="row"><div>اسم المستخدم<small>يظهر في الرسائل التحفيزية</small></div><input id="nm" style="width:130px" value="${E(NAME)}" placeholder="اسمك"><button class="bt" data-a="sn">حفظ</button></div>
+  <div class="row"><div>المظهر الداكن</div><button class="tg ${TH==='dark'?'on':''}" data-a="th" aria-label="تبديل المظهر"></button></div>
+  <div class="row"><div>تذكير يومي بالعلم والذكر<small>التنبيه بيشتغل والتطبيق مفتوح</small></div><input id="rt" type="time" style="width:110px" value="${RM.t}"><button class="tg ${RM.on?'on':''}" data-a="rm" aria-label="التذكير"></button></div>
+  <h3 class="sec">إضافة درس</h3>
+  <div class="row" style="flex-direction:column;align-items:stretch"><input id="at" placeholder="عنوان الدرس"><input id="as1" list="shl" placeholder="اسم الشيخ"><datalist id="shl">${SHL().map(s=>`<option value="${E(s)}">`).join('')}</datalist><select id="ac">${Object.values(CAT).map(c=>`<option>${c}</option>`).join('')}</select><input id="au" placeholder="رابط يوتيوب (اختياري)"><button class="bt" data-a="add">إضافة</button></div>
+  <h3 class="sec">استيراد من روابط يوتيوب</h3>
+  <div class="row" style="flex-direction:column;align-items:stretch"><textarea id="im" placeholder="كل سطر: عنوان | رابط يوتيوب | الشيخ"></textarea><button class="bt g" data-a="imp">استيراد</button></div>
+  <h3 class="sec">البيانات</h3>
+  <div class="row"><div>مشاركة المفضلة</div><button class="bt g" data-a="shf">مشاركة</button></div>
+  <div class="row"><div>مسح المشاهدات والمفضلة</div><button class="bt r" data-a="clr">مسح</button></div>
+  <p style="color:var(--mut);font-size:12px;line-height:1.8">بياناتك محفوظة على جهازك فقط.</p>`;
+ }
+}
+function bm(){const e=$('#bm');if(e)e.textContent=MSG[mi%MSG.length].replace('{n}',NAME||'يا طالب العلم')}
+setInterval(()=>{mi++;bm()},9000);
+const yid=u=>{const m=(u||'').match(/(?:v=|youtu\.be\/|embed\/|shorts\/)([\w-]{11})/);return m?m[1]:''};
+function save(){sv('ilm_w',[...W]);sv('ilm_f',[...F]);sv('ilm_c',CU);sv('ilm_o',O)}
+function openP(i){cur=L.find(x=>x.i===i);if(!cur)return;W.add(i);save();const y=vid(cur),sq=encodeURIComponent(cur.q||cur.s.replace(/^(الشيخ|الدكتور|دكتور|القارئ|الحبيب|د\.) /,'')+' '+cur.t);
+ const nx=L.filter(x=>x.i!==i&&(x.s===cur.s||x.c===cur.c)).slice(0,6);
+ $('#pl').innerHTML=`<div class="vid">${y?`<iframe src="${y.startsWith('PL')?'https://www.youtube.com/embed/videoseries?list='+y:'https://www.youtube.com/embed/'+y+'?rel=0'}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`:`<div class="np"><span>لسه مفيش فيديو مرتبط بالدرس ده</span><a class="bt" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=${sq}">ابحث عنه في يوتيوب</a></div>`}</div>
+ <div class="wrap"><h2 style="margin-top:12px;font-size:22px">${E(cur.t)}</h2><div style="color:var(--mut)">${E(cur.s)} · ${E(cur.c)}</div>${cur.c==='العفة والتوبة'?'<p style="color:var(--mut);font-size:13px;line-height:1.8">لو حاسس إن الموضوع مسيطر عليك، اتكلم مع شخص موثوق أو مختص، ومفيش عيب في طلب المساعدة. باب التوبة مفتوح دايماً.</p>':''}
+ <div class="acts"><button class="bt ${F.has(i)?'':'g'}" data-a="fv">${F.has(i)?'♥ في المفضلة':'♡ أضف للمفضلة'}</button><button class="bt g" data-a="shr">مشاركة</button><button class="bt g" data-a="gd">🤖 مرشد العلم</button><button class="bt g" data-a="cl">إغلاق</button></div>
+ ${y?`<a class="bt g" target="_blank" rel="noopener" href="${y.startsWith('PL')?'https://www.youtube.com/playlist?list='+y:'https://www.youtube.com/watch?v='+y}">فتح في يوتيوب</a>`:`<div class="row" style="flex-direction:column;align-items:stretch"><input id="lk" placeholder="الصق رابط الفيديو هنا"><button class="bt" data-a="lnk">ربط الفيديو</button></div>`}
+ <h3 class="sec">التالي</h3>${nx.map(x=>`<div class="row" data-i="${x.i}" style="cursor:pointer"><span style="font-size:24px">${IC[x.c]||'📖'}</span><div>${E(x.t)}<small>${E(x.s)}</small></div></div>`).join('')}</div>`;
+ $('#pl').classList.add('show');$('#pl').scrollTop=0;render()}
+function closeP(){$('#pl').classList.remove('show');$('#pl').innerHTML='';render()}
+function guide(){H=[];$('#as').innerHTML=`<div class="wrap"><header><h1>🤖 مرشد العلم</h1><button class="ib" data-a="cg">إغلاق</button></header><small style="color:var(--mut)">${cur?'عن درس: '+E(cur.t):'مساعد دراسي عام'}</small>
+ <div class="msgs" id="ms"></div><div class="chips">${['لخّص الدرس','أهم الفوائد','كيف أطبّق ده في حياتي؟','أسئلة لمراجعة الدرس'].map(x=>`<span class="ch" data-q="${x}">${x}</span>`).join('')}</div>
+ <div style="display:flex;gap:8px"><input id="qi" placeholder="اكتب سؤالك…"><button class="bt" data-a="sq">إرسال</button></div></div>`;$('#as').classList.add('show')}
+async function ask(t){if(!t)return;const ms=$('#ms');ms.insertAdjacentHTML('beforeend',`<div class="m u">${E(t)}</div><div class="m b" id="bt">…</div>`);const b=$('#bt');b.id='';
+ try{const sm=await claude.use('sample');if(!sm){b.textContent='المساعد غير متاح في العرض ده.';return}
+ const ctx=cur?`الدرس: «${cur.t}» للشيخ ${cur.s} (تصنيف: ${cur.c}).`:'';
+ const p='أنت «مرشد العلم» مساعد دراسي عربي في تطبيق دروس دينية. أجب بإيجاز وبوضوح في حدود 120 كلمة. أنت لا تسمع الفيديو، فاعتمد على عنوان الدرس والمعلومات العامة وبيّن ذلك عند التلخيص، ولا تنسب كلاماً حرفياً للشيخ. في الفتاوى والأحكام الخاصة انصح بسؤال أهل العلم.\n'+ctx+'\n'+H.slice(-6).map(x=>x.r+': '+x.c).join('\n')+'\nالمستخدم: '+t;
+ const r=await sm(p,{onText:({text})=>{b.textContent=text},cache:false});b.textContent=r.text;H.push({r:'المستخدم',c:t},{r:'المرشد',c:r.text})}catch(e){b.textContent='تعذّر الرد دلوقتي، جرّب بعد شوية.'}}
+function remind(){if(!RM.on)return;const n=new Date(),hm=String(n.getHours()).padStart(2,'0')+':'+String(n.getMinutes()).padStart(2,'0'),day=n.toDateString();
+ if(hm===RM.t&&RM.d!==day){RM.d=day;sv('ilm_r',RM);try{if(Notification.permission==='granted')new Notification('اسمع دين 🤍',{body:(NAME||'يا طالب العلم')+'، وقت درسك اليومي والذكر.'});else toast('وقت درسك اليومي 🤍')}catch(e){toast('وقت درسك اليومي 🤍')}}}
+setInterval(remind,20000);
+document.addEventListener('click',async e=>{const t=e.target.closest('[data-i],[data-s],[data-c],[data-t],[data-a],[data-q]');if(!t)return;const d=t.dataset;
+ if(d.a){const a=d.a;
+  if(a==='cl')return closeP();if(a==='cg'){$('#as').classList.remove('show');return}
+  if(a==='fv'){F.has(cur.i)?F.delete(cur.i):F.add(cur.i);save();return openP(cur.i)}
+  if(a==='shr'){const x={title:cur.t,text:'درس «'+cur.t+'» - '+cur.s+' على تطبيق اسمع دين',url:location.href};try{if(navigator.share)await navigator.share(x);else{await navigator.clipboard.writeText(x.text+' '+x.url);toast('تم النسخ')}}catch(e){}return}
+  if(a==='gd')return guide();if(a==='sq'){const i=$('#qi'),v=i.value.trim();i.value='';return ask(v)}
+  if(a==='lnk'){const y=yid($('#lk').value);if(!y)return toast('الرابط مش صحيح');O[cur.i]=y;save();return openP(cur.i)}
+  if(a==='sn'){NAME=$('#nm').value.trim();sv('ilm_n',NAME);toast('تم الحفظ');return render()}
+  if(a==='th'){TH=TH==='dark'?'light':'dark';sv('ilm_t',TH);applyTheme();return render()}
+  if(a==='rm'){RM.on=!RM.on;RM.t=$('#rt').value||'08:00';RM.d='';sv('ilm_r',RM);if(RM.on){try{await Notification.requestPermission()}catch(e){}}return render()}
+  if(a==='add'){const t1=$('#at').value.trim();if(!t1)return toast('اكتب العنوان');CU.push({i:'c'+Date.now(),s:$('#as1').value.trim()||'غير محدد',t:t1,c:$('#ac').value,y:yid($('#au').value)});L.push(CU[CU.length-1]);save();toast('تمت الإضافة');return render()}
+  if(a==='imp'){let n=0;$('#im').value.split('\n').forEach(r=>{const p=r.split('|').map(x=>x.trim());if(p[0]&&yid(p[1])){const o={i:'c'+Date.now()+n,s:p[2]||'غير محدد',t:p[0],c:'رقائق',y:yid(p[1])};CU.push(o);L.push(o);n++}});save();toast('تم استيراد '+n+' درس');return render()}
+  if(a==='shf'){const x=L.filter(l=>F.has(l.i)).map(l=>'• '+l.t+' - '+l.s).join('\n')||'لا يوجد مفضلة';try{if(navigator.share)await navigator.share({text:x});else{await navigator.clipboard.writeText(x);toast('تم النسخ')}}catch(e){}return}
+  if(a==='clr'){W.clear();F.clear();save();toast('تم المسح');return render()}
+ }
+ if(d.q!==undefined&&d.q!==null&&t.classList.contains('ch')&&t.closest('#as'))return ask(d.q);
+ if(d.i){return openP(d.i)}
+ if(d.s!==undefined){fs=fs===d.s&&!d.go?'':d.s;if(d.go){fc=''}tab='home';return render()}
+ if(d.c!==undefined){fc=d.c;if(d.go)fs='';tab='home';return render()}
+ if(d.t){tab=d.t;window.scrollTo(0,0);render()}
+});
+applyTheme();render();
+</script>
+</body>
+</html>
